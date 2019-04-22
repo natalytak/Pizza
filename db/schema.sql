@@ -1,0 +1,9 @@
+CREATE DATABASE pizza_db;
+USE pizza_db;
+
+CREATE TABLE pizza
+(
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    pizza_name VARCHAR(50) NOT NULL,
+    isDevoured BOOLEAN DEFAULT FALSE
+);
