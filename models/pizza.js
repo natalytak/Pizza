@@ -1,5 +1,9 @@
 var orm = require("../config/orm.js");
 
+// data = {
+//  var img_src = '../public/assets/images/pizzaEveryday.jpg';
+// // };
+
 var pizza = {
   selectAll: function(cb) {
     orm.selectAll("pizza", function(res) {

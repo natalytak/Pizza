@@ -1,3 +1,11 @@
+body {
+  background-image: url("../images/pizzaGreen.jpg");
+  background-size: cover;
+}
+
+.container {
+  background-color: rgb(245, 239, 231, 0.5);
+}
 .notDevouredPizzas {
   background-color: antiquewhite;
 }
@@ -11,20 +19,18 @@ li {
   margin: 15px;
   background: #faebd7;
 }
-body {
-  background-color: aquamarine;
-}
-h3 {
+
+h4 {
   color: red;
 }
 button {
   padding: 5px 10px;
-  background-color: goldenrod;
+  background-color: rgb(230, 129, 15);
 }
 
 .delete-pizza {
   padding: 5px 10px;
-  background-color: rgb(101, 95, 150);
+  background-color: rgb(105, 86, 248);
 }
 
 #ca {
