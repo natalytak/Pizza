@@ -1,0 +1,43 @@
+.notDevouredPizzas {
+  background-color: antiquewhite;
+}
+
+.devouredPizzas {
+ color: rgb(37, 18, 187);
+}
+
+li {
+  padding: 15px;
+  margin: 15px;
+  background: #faebd7;
+}
+body {
+  background-color: aquamarine;
+}
+h3 {
+  color: red;
+}
+button {
+  padding: 5px 10px;
+  background-color: goldenrod;
+}
+
+.delete-pizza {
+  padding: 5px 10px;
+  background-color: rgb(101, 95, 150);
+}
+
+#ca {
+  width: 30%;
+  height: 30%;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.form-group {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.add {
+  text-align: center;
+}
