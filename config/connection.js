@@ -10,7 +10,7 @@ var mysql = require('mysql');
 var connection;
 
 if (process.send.JAWSDB_URL) {
-    connection = mysql.createConnection(process.send.JAWSDB_URL);
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
     connection = mysql.createConnection({
         host: 'localhost',
