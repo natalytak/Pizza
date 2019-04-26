@@ -7,21 +7,19 @@ var mysql = require('mysql');
 //     password: '',
 //     database: 'pizza_db'
 // });
+var connection;
 
-var connection = mysql.createConnection({
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: '',
-    database: 'pizza_db'
-},
-{
-    "production": {
-        "use_env_variable": "JAWSDB_URL",
-        "dialect": "mysql"
-    }
-
-});
+if (process.send.JAWSDB_URL) {
+    connection = mysql.createConnection(process.send.JAWSDB_URL);
+} else {
+    connection = mysql.createConnection({
+        host: 'localhost',
+        port: 3306,
+        user: 'root',
+        password: '',
+        database: 'pizza_db'
+    })
+}
 
 connection.connect(function(err) {
     if (err) {
